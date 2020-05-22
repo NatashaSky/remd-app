@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F6FA"
+    tools:context=".inventory">
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemId"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:text=" Item ID"
+        app:layout_constraintStart_toEndOf="@+id/txtid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="105dp"
+        android:layout_height="21dp"
+        android:text="Item Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemCategory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtItemId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemCategory"
+        android:layout_width="102dp"
+        android:layout_height="20dp"
+        android:text="Item Category"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemStatus"
+        app:layout_constraintStart_toEndOf="@+id/txtLastName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemStatus"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="Item Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContact"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemId1"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="20dp"
+        android:text="1234"
+        app:layout_constraintStart_toEndOf="@+id/txtid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemName1"
+        android:layout_width="105dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="painkillers"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemCategory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtItemId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemCategory1"
+        android:layout_width="102dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="medicine"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemStatus"
+        app:layout_constraintStart_toEndOf="@+id/txtLastName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemStatus1"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Expired"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContact"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:onClick="editItem"
+        android:text="EDIT ITEM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addItem"
+        android:text="ADD ITEM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteItem"
+        android:text="DELETE ITEM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

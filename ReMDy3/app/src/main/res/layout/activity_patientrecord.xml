@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnAddRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addRecord"
+        android:text="Add Record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="editRecord"
+        android:text="EDIT RECORD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteRecord"
+        app:layout_constraintStart_toEndOf="@+id/btnAddRecord" />
+
+    <Button
+        android:id="@+id/btnDeleteRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteRecord"
+        android:text="DELETE RECORD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:text="firstName"
+        app:layout_constraintStart_toEndOf="@+id/txtId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:text="Last Name"
+        app:layout_constraintStart_toEndOf="@+id/txtFirstName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="102dp"
+        android:layout_height="20dp"
+        android:text="Contact #"
+        app:layout_constraintStart_toEndOf="@+id/txtLastName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContact"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
