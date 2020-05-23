@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E3F6FA"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:id="@+id/patientid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="123456" />
+
+    <TextView
+        android:id="@+id/patientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/patientid"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="Patient name" />
+
+    <TextView
+        android:id="@+id/patientcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/patientname"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="091845741534" />
+
+    <TextView
+        android:id="@+id/patientemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/patientcontact"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="saddsadasd@gmail.com" />
+
+</RelativeLayout>

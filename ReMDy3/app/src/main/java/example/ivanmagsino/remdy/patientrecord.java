@@ -11,7 +11,7 @@ public class patientrecord extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inventory);
+        setContentView(R.layout.activity_patientrecord);
 
         Button addRecord = findViewById(R.id.btnAddRecord);
         Button editRecord = findViewById(R.id.btnEditRecord);

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E3F6FA"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:id="@+id/itemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="#" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/itemid"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Item Name" />
+
+    <TextView
+        android:id="@+id/itemquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/itemname"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/itemcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/itemquantity"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Biotics" />
+
+    <TextView
+        android:id="@+id/itemstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/itemcategory"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Expired" />
+
+</RelativeLayout>

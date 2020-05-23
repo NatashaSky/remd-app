@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.imgRecord:
-                Intent patientActivity = new Intent(getApplicationContext(), inventory.class);
+                Intent patientActivity = new Intent(getApplicationContext(), patientrecord.class);
                 startActivity(patientActivity);
                 break;
 
             case R.id.imgIventory:
-                Intent inventActivity = new Intent(getApplicationContext(), patientrecord.class);
+                Intent inventActivity = new Intent(getApplicationContext(), inventory.class);
                 startActivity(inventActivity);
                 break;
         }

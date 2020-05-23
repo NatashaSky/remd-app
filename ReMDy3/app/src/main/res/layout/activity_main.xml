@@ -9,28 +9,33 @@
 
     <ImageView
         android:id="@+id/imgAppoint"
-        android:layout_width="661dp"
-        android:layout_height="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgRecord"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appointments" />
 
     <ImageView
         android:id="@+id/imgRecord"
-        android:layout_width="661dp"
-        android:layout_height="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
         app:layout_constraintBottom_toTopOf="@+id/imgIventory"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgAppoint"
-        app:layout_constraintVertical_bias="0.487"
         app:srcCompat="@drawable/patientrecords" />
 
     <ImageView
         android:id="@+id/imgIventory"
-        android:layout_width="661dp"
-        android:layout_height="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRecord"
+        app:srcCompat="@drawable/inventory" />
 </androidx.constraintlayout.widget.ConstraintLayout>
