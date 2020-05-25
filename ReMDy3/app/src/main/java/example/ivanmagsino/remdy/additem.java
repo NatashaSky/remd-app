@@ -7,20 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class patientrecord extends AppCompatActivity {
+public class additem extends AppCompatActivity {
 
+    Button btnItmAdd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patientrecord);
+        setContentView(R.layout.activity_additem);
 
-        Button addRecord = findViewById(R.id.btnAddRecord);
-
+        btnItmAdd = (Button) findViewById(R.id.btnPADD);
     }
 
-    public void addRecord(View v){
-        Intent nextActivity = new Intent(getApplicationContext(), addRecord.class);
+    public void addItm (View v){
+        Intent nextActivity = new Intent(getApplicationContext(), inventory.class);
         startActivity(nextActivity);
     }
-
 }
