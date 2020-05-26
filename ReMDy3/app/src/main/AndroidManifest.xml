@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addRecord"></activity>
+        <activity android:name=".editItem"></activity>
+        <activity android:name=".editPatient" />
+        <activity android:name=".addRecord" />
         <activity android:name=".additem" />
         <activity android:name=".inventory" />
         <activity

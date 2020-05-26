@@ -14,7 +14,7 @@ public class addRecord extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_record);
 
-        btnPADD = (Button) findViewById(R.id.btnPADD);
+        btnPADD = (Button) findViewById(R.id.btnSavePatient);
 
     }
 

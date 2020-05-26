@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class additem extends AppCompatActivity {
+public class editItem extends AppCompatActivity {
+    Button saveItem;
 
-    Button btnItmAdd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_additem);
+        setContentView(R.layout.activity_edit_item);
+        saveItem = (Button) findViewById(R.id.btnSavePatient);
 
-        btnItmAdd = (Button) findViewById(R.id.btnSavePatient);
     }
 
-    public void addItm (View v){
+    public void saveItem(View v){
         Intent nextActivity = new Intent(getApplicationContext(), inventory.class);
         startActivity(nextActivity);
     }
